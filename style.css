@@ -16,6 +16,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display:flex;
 }
 
 nav {
@@ -34,7 +35,7 @@ nav {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -108,36 +109,73 @@ h1 {
 
 /* HEADER SECTION */
 
-.row {
-    display:flex;
-    
+
+.header__description {
+    max-width: 600px;
+    width: 40%;
+    margin-top: 64px;
+    flex: 0 0 40%;
 }
 
 .header__description--para {
     margin: 32px 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.header__email {
+    max-width: 500px;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
 }
 
 .header__form {
-    display: flex;
+    display:flex;
     border: 3px solid #cccccc;
-    border-radius: 999px;
+    border-radius: 500px;
     overflow: hidden;
+    padding: 8px;
+    position: relative;
+    width:100%
+    transition: border-color 300ms ease;
 }
 
 .header__form--input {                     
-  border: none;                 
-  padding: 5px 16px;
+  flex:1;
+  border: none;
+  outline: none;
+  padding: 24px 24px 24px 32px;
   font-size: 16px;
+  
 }
+
+.header__form:hover {
+    border-color:#a0aec0;
+}
+
+.header__form:focus-within {
+    border-color: #6415ff;
+}
+
+
 
 .header__form--btn {
     background-color: #6415ff;
     color:white;
     border: none;
-    border-radius: 999px;
-    padding: 5px 20px;
+    border-radius: 500px;
+    padding: 0 32px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.header__form--btn:hover {
+    background-color: #3a00ae;
 }
 
 .header__customers--title {
@@ -145,6 +183,31 @@ h1 {
     font-size: 12px;
     font-weight: 700;
     color:#a0aec0;
+}
+
+.header__customers--img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-right: 64px;
+    opacity: 0.5;
+
+}
+
+.header__img--wrapper {
+    flex: 0 0 60%;         
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
+}
+
+.header__img {
+    max-width:100%;
+    width:auto;
+    height: auto;
+    display:block;
 }
 
 
