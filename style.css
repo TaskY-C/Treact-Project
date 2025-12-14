@@ -543,15 +543,16 @@ width: 100%;
 .plans {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .plan {
-    width: calc(100%/3);
+    width: calc(100%/3);  /*might need to adjust this */
+    flex: 1 1 calc(33.333% - 32px);
     display: flex;
     flex-direction: column;
     margin:64px 32px 0 0;
     padding: 8px 32px 0;
-    width:100%;
     position: relative;
 }
 
