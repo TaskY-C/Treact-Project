@@ -13,6 +13,10 @@
     padding: 0 32px;
 }
 
+img {
+    width: 100%;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -269,10 +273,6 @@ main {
     
 }
 
-.header__img {
-    max-width:512px;
-}
-
 
 /* FEATURES SECTION */
 
@@ -280,10 +280,7 @@ main {
     padding: 0 32px;
 }
 
-.row__features {
-    max-width: 1200px;
-    margin: 0;
-    display:flex;
+#features .row {
     flex-direction: column;
     align-items: center;
 }
