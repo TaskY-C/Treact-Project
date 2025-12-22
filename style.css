@@ -1675,6 +1675,10 @@ svg {
         flex-direction: column;
     }
 
+    .testimonial__buttons {
+        margin-top: 12px;
+    }
+
     .start__title {
         font-size: 24px;
     }
@@ -1707,6 +1711,7 @@ svg {
 
     .footer__column {
         padding: 0 16px;
+        align-items: center;
     }
 
     .footer__copyright {
